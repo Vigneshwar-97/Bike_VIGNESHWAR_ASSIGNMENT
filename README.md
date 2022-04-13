@@ -1,48 +1,53 @@
-# Project Name
-> Outline a brief description of your project.
+# Linear regression assignment:
+> A bike-sharing system is a service in which bikes are made available for shared use to individuals on a short term basis for a price or free. Many bike share systems allow people to borrow a bike from a "dock" which is usually computer-controlled wherein the user enters the payment information, and the system unlocks it. This bike can then be returned to another dock belonging to the same system.
 
 
-## Table of Contents
-* [General Info](#general-information)
-* [Technologies Used](#technologies-used)
-* [Conclusions](#conclusions)
-* [Acknowledgements](#acknowledgements)
+## Table of Contents:
+* Business Goal:
+* Analysis approach
+* Insights
+* Assignment-based Subjective Questions and General Subjective Questions
 
 <!-- You can include any other section that is pertinent to your problem -->
 
-## General Information
-- Provide general information about your project here.
-- What is the background of your project?
-- What is the business probem that your project is trying to solve?
-- What is the dataset that is being used?
+## Business Goal:
+- We are required to model the demand for shared bikes with the available independent variables. It will be used by the management to understand how 
+exactly the demands vary with different features.
+- They can accordingly manipulate the business strategy to meet the demand levels and meet the customer's expectations. 
+- Further, the model will be a good way for management to understand the 
+demand dynamics of a new market.
 
 <!-- You don't have to answer all the questions - just the ones relevant to your project. -->
 
-## Conclusions
-- Conclusion 1 from the analysis
-- Conclusion 2 from the analysis
-- Conclusion 3 from the analysis
-- Conclusion 4 from the analysis
+## Analysis approach:
+◦ Performed EDA and analysis the basic variables
+◦ Creating dummies and drop the unneeded rows
+◦ Create the linear model and check for P values
+◦ Drop column if P value is higher than limit
+◦ Check for VIF and drop the column if VIF is higher.
+◦ After multiple model building we found that model 11 is best fit.
 
 <!-- You don't have to answer all the questions - just the ones relevant to your project. -->
 
 
-## Technologies Used
-- library - version 1.0
-- library - version 2.0
-- library - version 3.0
+## Insights
+➢ As per summary our model's R-squared model is 79.7 and adjusted R-squared model is 79.1
+➢ Test R-squared is 77.5 and adjusted R-squared model is 77.4
+➢ Best equation fits with respect to above summary for cnt= 0.246 X yr -0.0836 X holiday - 0.198 X Spring 
+- 0.321 X Light snow - 0.089 X Mist+Cloudy +0.063 X 3 + 0.123 X 5 +0.151 X 6 +0.153 X 8 + 0.193 X 9 -
+0.049 X Sun + 0.126 X 7 + 0.115 X 10
+➢ Demand of bike can be say using below column values
+➢ -yr ,holiday,Spring,Mist+Cloudy,Light Snow,3,5,6,7,8,9,10,sunday -Demands increases in the month of 
+3,5,6,7,8,9,10 -Demand decreases if it is holiday, Spring,Light snow, Mist+cloudy, Sunday.
+➢ -Demand is higher in month of 3, 5 , 6, 8, 9 ,7 and 10
 
 <!-- As the libraries versions keep on changing, it is recommended to mention the version of library used in this project -->
 
-## Acknowledgements
-Give credit here.
-- This project was inspired by...
-- References if any...
-- This project was based on [this tutorial](https://www.example.com).
+## Assignment-based Subjective Questions and General Subjective Questions
 
 
 ## Contact
-Created by [@githubusername] - feel free to contact me!
+Created by [@Vigneshwar-97] - feel free to contact me!
 
 
 <!-- Optional -->
